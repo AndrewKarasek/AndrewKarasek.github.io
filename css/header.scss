@@ -1,0 +1,66 @@
+@import "grid.scss";
+
+.header-name {
+  @include colMarginLeft(2);
+  font-family: "otama";
+  color: $blue;
+  font-size: 108px;
+  font-weight: normal;
+  letter-spacing: -20px;
+  white-space: nowrap;
+  mix-blend-mode: multiply;
+  line-height: 0.55;
+  margin-top: -30px;
+
+  @include breakpoint(duex) {
+    font-size: 138px;
+  }
+  
+  position: relative;
+  z-index: 1;
+}
+
+.header-lastName {
+  font-weight: normal;
+  display: block; 
+  margin-left: 0.36em;
+}
+
+.header-description {
+  @include colMarginLeft(1);
+  max-width: 505px;
+
+  @include breakpoint(duex) {
+    margin-top: 60px;
+    @include colWidthMinus(6);
+  }
+   
+}
+
+.header-hacking {
+  @include colMarginLeft(1);
+  margin-top: -35px;
+  font-size: 0.9em;
+  max-width: 424px;
+
+  @include breakpoint(duex) {
+    @include colWidthMinus(5);
+  }
+
+  position: relative;
+  z-index: 1;
+}
+
+.header-social {
+  @include colMarginLeft(1);
+  list-style: none;
+  padding: 0;
+  margin-top: 50px;
+  font-size: 0.8em;
+  max-width: 424px;
+
+  li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+}

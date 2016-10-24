@@ -1,0 +1,10 @@
+@import './grid.scss';
+
+.blog {
+  position: absolute;
+  @include colWidthPlus(4);
+  @include colLeft(10);
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 100vh;
+  padding: 0 $gutterWidth;
+}

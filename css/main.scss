@@ -1,0 +1,121 @@
+$blue: #AFFFF1;
+$brightPink: #FF1F5F;
+$pink: #DD1D54;
+$lightPink: #ffc3dd;
+$pinkAlt: #ce2e5c;
+
+$une: 1000px;
+$duex: 1000px;
+$trois: 1300px;
+
+ @mixin breakpoint($point) {
+   @if $point == une {
+     @media (min-width: $une) { @content ; }
+  }
+   @else if $point == duex {
+     @media (min-width: $duex) { @content ; }
+  }
+    @else if $point == trois {
+     @media (min-width: $trois) { @content ; }
+  }
+}
+
+@import './reset.scss';
+@import '../fonts/otama.scss';
+@import 'header.scss';
+@import 'gridLayer.scss';
+@import 'contentLayer.scss';
+@import 'blog.scss';
+@import 'post.scss';
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+  font-size: 19px;
+  line-height: 1.5;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: "futura";
+  color: $lightPink;
+  background-color: $pink;
+
+  @include breakpoint(duex) {
+    font-size: 21px;
+  }  
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  height: 100%;
+  padding: 0;
+  overflow: auto;
+  margin: 0;
+  -webkit-overflow-scrolling: touch;
+}
+
+body {
+    min-height: 300px;
+}
+
+html, body, main {
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h5 {
+    margin: 0;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+i {
+    font-style: normal;
+}
+
+.grid {
+    display: flex;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    * {
+        background-color: rgba(0, 0, 0, 0);
+        height: 100vh;
+        flex-grow: 1;
+        margin: 0 .5vw;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color : white;
+    text-decoration: none;
+    border-bottom: 1px solid;
+}

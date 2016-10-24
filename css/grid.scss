@@ -1,0 +1,26 @@
+
+$columnCount: 15;
+$columnWidth: 5.733vw;
+$gutterWidth: (100 - ($columnWidth * 15)) / 14;
+
+@mixin colWidth($i) {
+  width: $i * $columnWidth + ($i * $gutterWidth);
+}
+
+@mixin colWidthMinus($i) {
+  width: $i * $columnWidth + (($i - 1) * $gutterWidth);
+}
+
+@mixin colWidthPlus($i) {
+  width: $i * $columnWidth + (($i + 1) * $gutterWidth);
+}
+
+@mixin colLeft($i) {
+  left: $i * $columnWidth + (($i) * $gutterWidth);
+}
+
+@mixin colMarginLeft($i) {
+  margin-left: $i * $columnWidth + (($i) * $gutterWidth);    
+}
+
+
