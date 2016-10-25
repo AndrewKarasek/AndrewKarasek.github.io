@@ -454,7 +454,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  font-family: "futura";
+  font-family: Futura,Trebuchet MS,Arial,sans-serif;
   color: #ffc3dd;
   background-color: #DD1D54; }
   @media (min-width: 1000px) {
