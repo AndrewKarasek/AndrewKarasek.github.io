@@ -5,11 +5,13 @@
   color: $blue;
   font-size: 108px;
   font-weight: normal;
+  /*
   letter-spacing: -20px;
   white-space: nowrap;
   mix-blend-mode: multiply;
   line-height: 0.55;
   margin-top: -30px;
+  */
   
   @supports not (mix-blend-mode: multiply) {
     color: #B72265;
