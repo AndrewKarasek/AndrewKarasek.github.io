@@ -43,7 +43,7 @@ html {
   background-color: $pink;
 
   @include breakpoint(duex) {
-    font-size: 21px;
+    font-size: 19px;
   }  
 }
 
@@ -59,7 +59,7 @@ body {
   overflow: auto;
   margin: 0;
   -webkit-overflow-scrolling: touch;
-  padding: 0 20px;
+  padding: 0 5vw;
 }
 
 body {

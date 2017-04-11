@@ -26,11 +26,10 @@
 }
 
 .header-description {
-  max-width: 505px;
+  max-width: 555px;
 
   @include breakpoint(duex) {
     margin-top: 60px;
-    @include colWidthMinus(6);
   }
    
 }
@@ -41,7 +40,7 @@
   position: relative;
   z-index: 1;
   max-width: 505px;
-  
+
   h2 {
     margin-bottom: 5px;
   }

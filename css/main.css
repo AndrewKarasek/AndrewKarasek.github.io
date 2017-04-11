@@ -382,11 +382,10 @@ th {
   margin-left: 0.36em; }
 
 .header-description {
-  max-width: 505px; }
+  max-width: 555px; }
   @media (min-width: 1000px) {
     .header-description {
-      margin-top: 60px;
-      width: 39.3997857143vw; } }
+      margin-top: 60px; } }
 
 .header-hacking {
   margin-top: -20px;
@@ -457,7 +456,7 @@ html {
   background-color: #DD1D54; }
   @media (min-width: 1000px) {
     html {
-      font-size: 21px; } }
+      font-size: 19px; } }
 
 html {
   height: 100%;
@@ -470,7 +469,7 @@ body {
   overflow: auto;
   margin: 0;
   -webkit-overflow-scrolling: touch;
-  padding: 0 20px; }
+  padding: 0 5vw; }
 
 body {
   min-height: 300px; }
