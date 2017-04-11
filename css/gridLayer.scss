@@ -1,9 +1,8 @@
 @import 'grid.scss';
 
 .gridLayer {
-  height: 100%;
   display: flex;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;

@@ -33,7 +33,7 @@ $trois: 1300px;
 }
 
 html {
-  font-size: 19px;
+  font-size: 17px;
   line-height: 1.5;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -43,7 +43,7 @@ html {
   background-color: $pink;
 
   @include breakpoint(duex) {
-    font-size: 21px;
+    font-size: 19px;
   }  
 }
 
@@ -59,6 +59,7 @@ body {
   overflow: auto;
   margin: 0;
   -webkit-overflow-scrolling: touch;
+  padding: 0 5vw;
 }
 
 body {
@@ -115,7 +116,16 @@ img {
 }
 
 a {
-    color : white;
-    text-decoration: none;
-    border-bottom: 1px solid;
+  color: white;
+  cursor: pointer;
+  opacity: 0.85;
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 2px solid rgba(255,255,255,0.2);
+  transition: none 0.2s ease;
+  transition-property: color, border;
+  &:hover {
+    opacity: 1;
+    border-color: rgba(255,255,255,0.8);;
+  }
 }
